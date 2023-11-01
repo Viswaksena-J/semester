@@ -1,0 +1,137 @@
+LONGEST COMMON SUBSEQUENCE  - 
+
+
+
+from typing import List
+ 
+def longest_common_subsequence(str1: str, str2: str) -> str:
+    subsequences1 = generate_subsequences(str1)
+    subsequences2 = generate_subsequences(str2)
+    lcs = ""
+    for subsequence1 in subsequences1:
+        for subsequence2 in subsequences2:
+            if subsequence1 == subsequence2 and len(subsequence1) > len(lcs):
+                lcs = subsequence1
+    return lcs
+ 
+def generate_subsequences(s: str) -> List[str]:
+    subsequences = []
+    generate_subsequences_helper(s, "", 0, subsequences)
+    return subsequences
+ 
+def generate_subsequences_helper(s: str, subsequence: str, index: int, subsequences: List[str]) -> None:
+    if index == len(s):
+        subsequences.append(subsequence)
+        return
+    generate_subsequences_helper(s, subsequence, index + 1, subsequences)
+    generate_subsequences_helper(s, subsequence + s[index], index + 1, subsequences)
+ 
+if __name__ == '__main__':
+    str1 = "AGGTAB"
+    str2 = "GXTXAYB"
+    lcs = longest_common_subsequence(str1, str2)
+    print("Length of LCS is ", len(lcs))
+    
+    
+    
+COIN EXCHANGE  - 
+
+def count(coins, n, sum):
+ 
+    # If sum is 0 then there is 1
+    # solution (do not include any coin)
+    if (sum == 0):
+        return 1
+ 
+    # If sum is less than 0 then no
+    # solution exists
+    if (sum < 0):
+        return 0
+ 
+    # If there are no coins and sum
+    # is greater than 0, then no
+    # solution exist
+    if (n <= 0):
+        return 0
+ 
+    # count is sum of solutions (i)
+    # including coins[n-1] (ii) excluding coins[n-1]
+    return count(coins, n - 1, sum) + count(coins, n, sum-coins[n-1])
+ 
+ 
+# Driver program to test above function
+coins = [1, 2, 3]
+n = len(coins)
+print(count(coins, n, 4))
+
+
+
+LONGEST INCREASING SUB SEQUENCE - 
+
+def _lis(arr, n):
+
+    # To allow the access of global variable
+    global maximum
+
+    # Base Case
+    if n == 1:
+        return 1
+
+    # maxEndingHere is the length of LIS ending with arr[n-1]
+    maxEndingHere = 1
+
+    # Recursively get all LIS ending with
+    # arr[0], arr[1]..arr[n-2]
+    # If arr[i-1] is smaller than arr[n-1], and
+    # max ending with arr[n-1] needs to be updated,
+    # then update it
+    for i in range(1, n):
+        res = _lis(arr, i)
+        if arr[i-1] < arr[n-1] and res+1 > maxEndingHere:
+            maxEndingHere = res + 1
+
+    # Compare maxEndingHere with overall maximum. And
+    # update the overall maximum if needed
+    maximum = max(maximum, maxEndingHere)
+
+    return maxEndingHere
+
+
+def lis(arr):
+
+    # To allow the access of global variable
+    global maximum
+
+    # Length of arr
+    n = len(arr)
+
+    # Maximum variable holds the result
+    maximum = 1
+
+    # The function _lis() stores its result in maximum
+    _lis(arr, n)
+    return maximum
+
+
+# Driver program to test the above function
+if __name__ == '__main__':
+    arr = [10, 22, 9, 33, 21, 50, 41, 60]
+    n = len(arr)
+
+    # Function call
+    print("Length of lis is", lis(arr))
+
+
+MAX SUM SUB ARRAY  -  
+
+
+def maximumSubarraySum(arr):
+    n = len(arr)
+    maxSum = -1e8
+
+    for i in range(0, n):
+        currSum = 0
+        for j in range(i, n):
+            currSum = currSum + arr[j]
+            if(currSum > maxSum):
+                maxSum = currSum
