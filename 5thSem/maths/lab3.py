@@ -14,18 +14,23 @@ def seasonal_fish_inference(seasonal_prior_bass, seasonal_prior_salmon, seasonal
         seasonal_prior_bass = 0.6
         seasonal_prior_salmon = 0.4
     else:
+        # Default seasonal prior probabilities for unknown seasons
         seasonal_prior_bass = 0.4
         seasonal_prior_salmon = 0.6
 
+    # Calculate the seasonal likelihood of observing the current fish
     seasonal_likelihood_bass = seasonal_likelihood_bass_given_bass * seasonal_prior_bass + seasonal_likelihood_salmon_given_salmon * seasonal_prior_salmon
     seasonal_likelihood_salmon = seasonal_likelihood_bass_given_bass * seasonal_prior_salmon + seasonal_likelihood_salmon_given_salmon * (1 - seasonal_prior_salmon)
 
+    # Calculate the seasonal posterior probabilities
     seasonal_posterior_bass = (seasonal_likelihood_bass_given_bass * seasonal_prior_bass) / seasonal_likelihood_bass
     seasonal_posterior_salmon = (seasonal_likelihood_salmon_given_salmon * seasonal_prior_salmon) / seasonal_likelihood_salmon
 
+    # Normalize the seasonal posterior probabilities
     normalized_posterior_bass = seasonal_posterior_bass / (seasonal_posterior_bass + seasonal_posterior_salmon)
     normalized_posterior_salmon = seasonal_posterior_salmon / (seasonal_posterior_bass + seasonal_posterior_salmon)
 
+    # Make a seasonal prediction using the MAP estimate
     if normalized_posterior_bass > normalized_posterior_salmon:
         seasonal_prediction = "SeaBass"
     else:
