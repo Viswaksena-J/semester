@@ -1,41 +1,15 @@
-
-
-import math
-import os
-import random
-import re
-import sys
-
-#
-# Complete the 'diagonalDifference' function below.
-#
-# The function is expected to return an INTEGER.
-# The function accepts 2D_INTEGER_ARRAY arr as parameter.
-#
-
-def diagonalDifference(arr):
-    # Write your code here
-    sumr=0
-    suml=0
-    sum=0
-    j=n-1
-    for i in range(0, n):
-        sumr+=arr[j][i]
-        suml+=arr[i][i]
-        print(sumr)
-        print(suml)
-        j-=1
-    sum=abs(suml-sumr)
-    return (sum)
-if __name__ == '__main__':
-
-    n = int(input().strip())
-
-    arr = []
-
-    for _ in range(n):
-        arr.append(list(map(int, input().rstrip().split())))
-
-    result = diagonalDifference(arr)
-
-    print(result)
+from pymongo import MongoClient
+uri = "mongodb://127.0.0.1:27017/"
+client = MongoClient(uri)
+db = client.training
+collection = db.mongodb_glossary
+documents_to_insert = [
+{"database": "a database contains collections"},
+{"collection": "a collection stores the documents"},
+{"document": "a document contains the data in the form of key-value pairs."},
+]
+collection.insert_many(documents_to_insert) 
+documents_all = collection.find()
+for document in documents_all:
+ print(document)
+client.close()
