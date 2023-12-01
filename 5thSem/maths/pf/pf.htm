@@ -1,0 +1,103 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0033)http://sork4.stanford.edu/pf.html -->
+<HTML><HEAD><TITLE></TITLE>
+<META http-equiv=Content-Type content="text/html; charset=UTF-8">
+<META http-equiv=Content-Style-Type content=text/css>
+<META content="MSHTML 6.00.2900.3395" name=GENERATOR>
+<META content=949.33 name=CocoaVersion>
+<STYLE type=text/css>P.p1 {
+	MARGIN: 0px; FONT: 12px Helvetica
+}
+P.p2 {
+	MIN-HEIGHT: 14px; MARGIN: 0px; FONT: 12px Helvetica
+}
+SPAN.s1 {
+	TEXT-DECORATION: underline
+}
+SPAN.Apple-tab-span {
+	WHITE-SPACE: pre
+}
+</STYLE>
+</HEAD>
+<BODY>
+<P class=p1><SPAN class=s1><B>Warmup questions</B></SPAN></P>
+<P class=p2><BR></P>
+<P class=p1>1. For what kinds of maps is it especially helpful to have higher 
+MAX_RANGE?</P>
+<P class=p2><BR></P>
+<P class=p1>2. If your robot might move to a random location sometimes, how can 
+we model that with our particle filter and recover?</P>
+<P class=p2><BR></P>
+<P class=p1>3. Why might you want to add particles in random locations even if 
+you know your robot will never be kidnapped?</P>
+<P class=p2><BR></P>
+<P class=p1><SPAN class=s1><B>How to run the particle filter:</B></SPAN></P>
+<P class=p2><BR></P>
+<P class=p1>1. Download sork4.stanford.edu/pf.zip</P>
+<P class=p1><SPAN class=Apple-tab-span></SPAN>Put it in My Documents\Matlab</P>
+<P class=p1><SPAN class=Apple-tab-span></SPAN>Right-cick "pf" and choose 
+"Extract All..."</P>
+<P class=p1><SPAN class=Apple-tab-span></SPAN>Keep pressing "next"</P>
+<P class=p2><BR></P>
+<P class=p1>2. Open MatLab</P>
+<P class=p2><BR></P>
+<P class=p1>3. In the command window, type:</P>
+<P class=p1><SPAN class=Apple-tab-span></SPAN>cd pf/pf</P>
+<P class=p2><BR></P>
+<P class=p1>Parameters are defined at the top of the file "pf.m"</P>
+<P class=p1>To run the particle filter, just type "pf" in the command window</P>
+<P class=p1>If you want to cancel it while it's running, type ctrl-c in the 
+command window</P>
+<P class=p1>Let's use MAP_NUMBER = 1 for the first experiments</P>
+<P class=p2><SPAN class=s1><B></B></SPAN><BR></P>
+<P class=p1><SPAN class=s1><B>Lab questions</B></SPAN></P>
+<P class=p2><B></B><BR></P>
+<P class=p1><B>Easy:</B></P>
+<P class=p2><BR></P>
+<P class=p1>1. Try experimenting with N (number of particles). What happens when 
+you don't have enough particles?</P>
+<P class=p2><BR></P>
+<P class=p1>2. Try experimenting with different MAX_RANGE values. See how short 
+values reduce the ability of the particle filter to distinguish between 
+different locations.<SPAN class=Apple-converted-space>&nbsp;</SPAN></P>
+<P class=p2><BR></P>
+<P class=p1>3. Try experimenting with different MEASUREMENT_NOISE values. (I 
+suggest at first you always set MEASUREMENT_NOISE2 to be twice your chosen value 
+of MEASUREMENT_NOISE.) Notice how much worse your tracking gets when the noise 
+increases.</P>
+<P class=p2><BR></P>
+<P class=p1><B>More interesting:</B></P>
+<P class=p2><BR></P>
+<P class=p1>4. Do you think you can compensate for higher measurement noise with 
+a sensor that can see farther? Try it!</P>
+<P class=p2><BR></P>
+<P class=p1>5. What happens when your assumed motion noise is much less than the 
+actual motion noise? Try setting MOTION_NOISE = 1 and MOTION_NOISE2 = .3</P>
+<P class=p1>Do you see what's wrong with the particle filter now when your 
+robot's speed changes quickly?</P>
+<P class=p2><BR></P>
+<P class=p1>6. Now try the opposite, where MOTION_NOISE = .3 and MOTION_NOISE2 = 
+2</P>
+<P class=p1>With the assumed motion noise is much more than the actual motion 
+noise, how does the particle filter behave differently from before?<SPAN 
+class=Apple-converted-space>&nbsp;</SPAN></P>
+<P class=p2><BR></P>
+<P class=p1>7. What do you think is worse: underestimating the motion noise or 
+overestimating it?<SPAN class=Apple-converted-space>&nbsp;</SPAN></P>
+<P class=p2><BR></P>
+<P class=p1>8. Set MEASUREMENT_NOISE = 5 and try different values of 
+MEASUREMENT_NOISE2. What happens when the assume measurement noise is too small? 
+What happens when it's much larger than reality? Explain why using too low a 
+value is bad, explain why using too large a value is bad, and make an opinion 
+about how to pick a good value.</P>
+<P class=p2><BR></P>
+<P class=p1><B>Have some fun:</B></P>
+<P class=p2><B></B><BR></P>
+<P class=p1>9. Try different maps by setting MAP_NUMBER = 2 or MAP_NUMBER = 3. 
+What differences do you see in how the particle filter performs with different 
+maps? Do you think different settings are better for different maps?</P>
+<P class=p2><BR></P>
+<P class=p1>10. Make your own maps! Modify makemap.m and generate your own map 
+for map #4. Can you make a map that is very confusing for a particle filter? How 
+about a map that makes tracking very easy?</P>
+<P class=p2><BR></P></BODY></HTML>

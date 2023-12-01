@@ -1,0 +1,55 @@
+#
+#DAStudio Preference File
+#
+
+
+[DAStudio DDG]
+DDGFontSize=8
+
+[DAStudio Model Explorer]
+MEGeometry=390 225 908 634
+MESearchOptions_DeepSearch=1
+MESearchOptions_EvaluateProperties=0
+MESearchOptions_MatchCase=0
+MESearchOptions_MatchWholeString=0
+MESearchOptions_RefineAnd=0
+MESearchOptions_RegularExpression=1
+MESearchOptions_SearchLinks=0
+MESearchOptions_SearchMasks=0
+MESplitterPositions=502 0 195 700 232 463 
+METreeClassNames=Simulink.BlockDiagram,Simulink.ConfigSet,Simulink.Root,
+METreeClassRecord_Simulink.BlockDiagram::ObjectTypes=DAStudio.WorkspaceNode,Simulink.code,Simulink.ConfigSet,Simulink.Gain,Simulink.ModelAdvisor,Simulink.Scope,Simulink.Sin,
+METreeClassRecord_Simulink.BlockDiagram::PropertyList=Name,BlockType,MaskType,OutMin,OutMax,OutDataTypeStr,SampleTime,Port,IconDisplay,PortWidth,SignalType,SamplingMode,FrameStatus,LatchInput,
+METreeClassRecord_Simulink.ConfigSet::ObjectTypes=hdlcoderui.hdlcc,Simulink.DataIOCC,Simulink.DebuggingCC,Simulink.HardwareCC,Simulink.ModelReferenceCC,Simulink.OptimizationCC,Simulink.RTWCC,Simulink.SolverCC,
+METreeClassRecord_Simulink.ConfigSet::PropertyList=Name,StopTime,SaveOutput,ProdHWDeviceType,InlineParams,SolverType,SaveTime,SaveState,
+METreeClassRecord_Simulink.Root::ObjectTypes=DAStudio.WorkspaceNode,Simulink.BlockDiagram,
+METreeClassRecord_Simulink.Root::PropertyList=Name,ModelVersion,LastSaved,LibraryLinkDisplay,ModelBrowserVisibility,Dirty,Description,
+MEViewOptions_MarkUnrelatedProperties=0
+MEViewOptions_ShowCustomizePropsPane=0
+MEViewOptions_ShowDynamicDialogs=1
+MEViewOptions_ShowPropertyDetails=1
+MEViewOptions_StackListnTree=0
+
+[General]
+MatlabRelease=2007b
+
+[Model Advisor]
+MEGeometry=280 175 1120 700
+MESearchOptions_DeepSearch=1
+MESearchOptions_EvaluateProperties=0
+MESearchOptions_MatchCase=0
+MESearchOptions_MatchWholeString=0
+MESearchOptions_RefineAnd=0
+MESearchOptions_RegularExpression=1
+MESearchOptions_SearchLinks=0
+MESearchOptions_SearchMasks=0
+MESplitterPositions=647 0 431 676 0 676 
+METreeClassNames=Simulink.TaskAdvisor,
+METreeClassRecord_Simulink.TaskAdvisor::ObjectTypes=Simulink.TaskAdvisor,
+METreeClassRecord_Simulink.TaskAdvisor::PropertyList=Name,
+MEViewOptions_MarkUnrelatedProperties=0
+MEViewOptions_ShowCustomizePropsPane=0
+MEViewOptions_ShowDynamicDialogs=1
+MEViewOptions_ShowPropertyDetails=1
+MEViewOptions_StackListnTree=0
+

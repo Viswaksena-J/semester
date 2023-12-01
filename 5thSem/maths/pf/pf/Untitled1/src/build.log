@@ -1,0 +1,121 @@
+Compiler version: 4.7 (R2007b) 
+mcc -o 'Untitled1' -W 'WinMain:Untitled1' -d 'E:\DMS -LAB NOTES\probabilty Robotics\pf\pf\Untitled1\src' -T 'link:exe' -v 'E:\DMS -LAB NOTES\probabilty Robotics\pf\pf\pf.m'  
+Processing C:\Program Files\MATLAB\R2007b\toolbox\matlab\mcc.enc 
+Processing C:\Program Files\MATLAB\R2007b\toolbox\comm\mcc.enc 
+Processing C:\Program Files\MATLAB\R2007b\toolbox\stats\mcc.enc 
+Processing C:\Program Files\MATLAB\R2007b\toolbox\images\mcc.enc 
+Processing C:\Program Files\MATLAB\R2007b\toolbox\signal\mcc.enc 
+Processing C:\Program Files\MATLAB\R2007b\toolbox\shared\imageslib\mcc.enc 
+Processing C:\Program Files\MATLAB\R2007b\toolbox\database\mcc.enc 
+Processing include files... 
+2 item(s) added. 
+Processing directories installed with MCR... 
+The file E:\DMS -LAB NOTES\probabilty Robotics\pf\pf\Untitled1\src\mccExcludedFiles.log contains a list of functions excluded from the CTF archive. 
+2 item(s) added. 
+Generating MATLAB path for the compiled application... 
+Created 46 path items. 
+Begin validation of MEX files: Sun Dec 21 17:15:14 2008 
+Validating 'C:\Program Files\MATLAB\R2007b\toolbox\compiler\deploy\deploywhich.mexw32'. 
+No conflicting M-file found. 
+Validating 'C:\Program Files\MATLAB\R2007b\toolbox\compiler\deploy\readline.mexw32'. 
+No conflicting M-file found. 
+Validating 'C:\Program Files\MATLAB\R2007b\toolbox\images\images\private\imlincombc.mexw32'. 
+No conflicting M-file found. 
+Validating 'C:\Program Files\MATLAB\R2007b\toolbox\images\images\private\immultmex.mexw32'. 
+No conflicting M-file found. 
+Validating 'C:\Program Files\MATLAB\R2007b\toolbox\images\images\private\intlutc.mexw32'. 
+No conflicting M-file found. 
+Validating 'C:\Program Files\MATLAB\R2007b\toolbox\images\iptutils\iptcheckinput.mexw32'. 
+Found M-file 'C:\Program Files\MATLAB\R2007b\toolbox\images\iptutils\iptcheckinput.m'. 
+MEX file 
+    'C:\Program Files\MATLAB\R2007b\toolbox\images\iptutils\iptcheckinput.mexw32' 
+ is valid. It contains 'mexFunction.' 
+Validating 'C:\Program Files\MATLAB\R2007b\toolbox\images\iptutils\private\iptregistry.mexw32'. 
+Found M-file 'C:\Program Files\MATLAB\R2007b\toolbox\images\iptutils\private\iptregistry.m'. 
+MEX file 
+    'C:\Program Files\MATLAB\R2007b\toolbox\images\iptutils\private\iptregistry.mexw32' 
+ is valid. It contains 'mexFunction.' 
+Validating 'C:\Program Files\MATLAB\R2007b\toolbox\images\medformats\private\bitparse.mexw32'. 
+No conflicting M-file found. 
+Validating 'C:\Program Files\MATLAB\R2007b\toolbox\images\medformats\private\dicom_decode_rle_segment.mexw32'. 
+No conflicting M-file found. 
+Validating 'C:\Program Files\MATLAB\R2007b\toolbox\images\medformats\private\dicomlookup_helper.mexw32'. 
+No conflicting M-file found. 
+Validating 'C:\Program Files\MATLAB\R2007b\toolbox\images\medformats\private\dicomparse.mexw32'. 
+No conflicting M-file found. 
+Validating 'C:\Program Files\MATLAB\R2007b\toolbox\images\medformats\private\tobits.mexw32'. 
+No conflicting M-file found. 
+Validating 'C:\Program Files\MATLAB\R2007b\toolbox\stats\private\statsizechk.mexw32'. 
+Found M-file 'C:\Program Files\MATLAB\R2007b\toolbox\stats\private\statsizechk.m'. 
+MEX file 
+    'C:\Program Files\MATLAB\R2007b\toolbox\stats\private\statsizechk.mexw32' 
+ is valid. It contains 'mexFunction.' 
+End validation of MEX files: Sun Dec 21 17:15:14 2008 
+Deleting 14 temporary MEX authorization files. 
+Removing: 'C:\DOCUME~1\Admin\LOCALS~1\Temp\mathworks_tmp_22736_3768.auth'. 
+Removing: 'C:\DOCUME~1\Admin\LOCALS~1\Temp\mathworks_tmp_11395_3768.auth'. 
+Removing: 'C:\DOCUME~1\Admin\LOCALS~1\Temp\mathworks_tmp_15473_3768.auth'. 
+Removing: 'C:\DOCUME~1\Admin\LOCALS~1\Temp\mathworks_tmp_30341_3768.auth'. 
+Removing: 'C:\DOCUME~1\Admin\LOCALS~1\Temp\mathworks_tmp_10718_3768.auth'. 
+Removing: 'C:\DOCUME~1\Admin\LOCALS~1\Temp\mathworks_tmp_19842_3768.auth'. 
+Removing: 'C:\DOCUME~1\Admin\LOCALS~1\Temp\mathworks_tmp_16955_3768.auth'. 
+Removing: 'C:\DOCUME~1\Admin\LOCALS~1\Temp\mathworks_tmp_15121_3768.auth'. 
+Removing: 'C:\DOCUME~1\Admin\LOCALS~1\Temp\mathworks_tmp_10683_3768.auth'. 
+Removing: 'C:\DOCUME~1\Admin\LOCALS~1\Temp\mathworks_tmp_30638_3768.auth'. 
+Removing: 'C:\DOCUME~1\Admin\LOCALS~1\Temp\mathworks_tmp_4019_3768.auth'. 
+Removing: 'C:\DOCUME~1\Admin\LOCALS~1\Temp\mathworks_tmp_4854_3768.auth'. 
+Removing: 'C:\DOCUME~1\Admin\LOCALS~1\Temp\mathworks_tmp_29799_3768.auth'. 
+Removing: 'C:\DOCUME~1\Admin\LOCALS~1\Temp\mathworks_tmp_26323_3768.auth'. 
+Parsing file "E:\DMS -LAB NOTES\probabilty Robotics\pf\pf\pf.m" 
+	(Referenced from: "Compiler Command Line"). 
+Parsing file "C:\Program Files\MATLAB\R2007b\toolbox\compiler\deploy\deployprint.m" 
+	(Referenced from: "Compiler Command Line"). 
+Parsing file "C:\Program Files\MATLAB\R2007b\toolbox\compiler\deploy\printdlg.m" 
+	(Referenced from: "Compiler Command Line"). 
+Generating file "E:\DMS -LAB NOTES\probabilty Robotics\pf\pf\Untitled1\src\Untitled1_main.c". 
+Generating file "E:\DMS -LAB NOTES\probabilty Robotics\pf\pf\Untitled1\src\readme.txt". 
+Generating file "E:\DMS -LAB NOTES\probabilty Robotics\pf\pf\Untitled1\src\Untitled1_mcc_component_data.c". 
+Executing command: mbuild -O -v -output "Untitled1" -I"E:\DMS -LAB NOTES\probabilty Robotics\pf\pf\Untitled1\src" "E:\DMS -LAB NOTES\probabilty Robotics\pf\pf\Untitled1\src\Untitled1_main.c" "E:\DMS -LAB NOTES\probabilty Robotics\pf\pf\Untitled1\src\Untitled1_mcc_component_data.c" -link exe -outdir "E:\DMS -LAB NOTES\probabilty Robotics\pf\pf\Untitled1\src" 
+ This is mbuild Copyright 1984-2006 The MathWorks, Inc. 
+ 
+-> Default options filename found in C:\Documents and Settings\Admin\Application Data\MathWorks\MATLAB\R2007b 
+---------------------------------------------------------------- 
+->    Options file           = C:\Documents and Settings\Admin\Application Data\MathWorks\MATLAB\R2007b\compopts.bat 
+->    COMPILER               = lcc 
+->    Compiler flags: 
+         COMPFLAGS           = -c -Zp8 -I"C:\PROGRA~1\MATLAB\R2007b\sys\lcc\include" -noregistrylookup 
+         OPTIMFLAGS          = -DNDEBUG 
+         DEBUGFLAGS          = -g4 
+         arguments           =  "-IE:\DMS -LAB NOTES\probabilty Robotics\pf\pf\Untitled1\src" 
+         Name switch         = -Fo 
+->    Pre-linking commands   =  
+->    LINKER                 = lcclnk 
+->    Link directives: 
+         LINKFLAGS           = -tmpdir "E:\DMS -LAB NOTES\probabilty Robotics\pf\pf\Untitled1\src\." -L"C:\PROGRA~1\MATLAB\R2007b\sys\lcc\lib" -libpath "C:\PROGRA~1\MATLAB\R2007b\extern\lib\win32\lcc" 
+         LINKFLAGSPOST       = mclmcrrt.lib 
+         Name directive      = -o "E:\DMS -LAB NOTES\probabilty Robotics\pf\pf\Untitled1\src\Untitled1.exe" 
+         File link directive =  
+         Lib. link directive =  
+         Rsp file indicator  = @ 
+->    Resource Compiler      =  
+->    Resource Linker        =  
+---------------------------------------------------------------- 
+ 
+ 
+--> "lcc  "-IE:\DMS -LAB NOTES\probabilty Robotics\pf\pf\Untitled1\src" -c -Zp8 -I"C:\PROGRA~1\MATLAB\R2007b\sys\lcc\include" -noregistrylookup -FoC:\DOCUME~1\Admin\LOCALS~1\Temp\mbuild_546DE869-5726-4A24-E6A7-7A61D379CCF0\Untitled1_main.obj -IC:\PROGRA~1\MATLAB\R2007b\extern\include -IC:\PROGRA~1\MATLAB\R2007b\simulink\include -DNDEBUG "E:\DMS -LAB NOTES\probabilty Robotics\pf\pf\Untitled1\src\Untitled1_main.c"" 
+ 
+ 
+--> "lcc  "-IE:\DMS -LAB NOTES\probabilty Robotics\pf\pf\Untitled1\src" -c -Zp8 -I"C:\PROGRA~1\MATLAB\R2007b\sys\lcc\include" -noregistrylookup -FoC:\DOCUME~1\Admin\LOCALS~1\Temp\mbuild_546DE869-5726-4A24-E6A7-7A61D379CCF0\Untitled1_mcc_component_data.obj -IC:\PROGRA~1\MATLAB\R2007b\extern\include -IC:\PROGRA~1\MATLAB\R2007b\simulink\include -DNDEBUG "E:\DMS -LAB NOTES\probabilty Robotics\pf\pf\Untitled1\src\Untitled1_mcc_component_data.c"" 
+ 
+    Contents of C:\DOCUME~1\Admin\LOCALS~1\Temp\mbuild_546DE869-5726-4A24-E6A7-7A61D379CCF0\mbuild_tmp.rsp: 
+  C:\DOCUME~1\Admin\LOCALS~1\Temp\mbuild_546DE869-5726-4A24-E6A7-7A61D379CCF0\Untitled1_main.obj  C:\DOCUME~1\Admin\LOCALS~1\Temp\mbuild_546DE869-5726-4A24-E6A7-7A61D379CCF0\Untitled1_mcc_component_data.obj 
+ 
+ 
+--> "lcclnk -o "E:\DMS -LAB NOTES\probabilty Robotics\pf\pf\Untitled1\src\Untitled1.exe" -tmpdir "E:\DMS -LAB NOTES\probabilty Robotics\pf\pf\Untitled1\src\." -L"C:\PROGRA~1\MATLAB\R2007b\sys\lcc\lib" -libpath "C:\PROGRA~1\MATLAB\R2007b\extern\lib\win32\lcc"  @C:\DOCUME~1\Admin\LOCALS~1\Temp\mbuild_546DE869-5726-4A24-E6A7-7A61D379CCF0\mbuild_tmp.rsp  mclmcrrt.lib" 
+ 
+ 
+--> "if exist C:\DOCUME~1\Admin\LOCALS~1\Temp\mbuild_546DE869-5726-4A24-E6A7-7A61D379CCF0\templib.def del C:\DOCUME~1\Admin\LOCALS~1\Temp\mbuild_546DE869-5726-4A24-E6A7-7A61D379CCF0\templib.def" 
+ 
+ 
+--> "if exist C:\DOCUME~1\Admin\LOCALS~1\Temp\mbuild_546DE869-5726-4A24-E6A7-7A61D379CCF0\templib_stub.obj del C:\DOCUME~1\Admin\LOCALS~1\Temp\mbuild_546DE869-5726-4A24-E6A7-7A61D379CCF0\templib_stub.obj" 
+ 

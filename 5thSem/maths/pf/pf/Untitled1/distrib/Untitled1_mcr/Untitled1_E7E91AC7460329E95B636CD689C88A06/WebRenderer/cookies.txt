@@ -1,0 +1,9 @@
+# HTTP Cookie File
+# http://www.netscape.com/newsref/std/cookie_spec.html
+# This is a generated file!  Do not edit.
+# To delete cookies, use the Cookie Manager.
+
+.rediff.com	TRUE	/	FALSE	1229369856	RLOC	%5F%5F2K72YM6wDUY%5F%5Fz72RWgzVumk%5F%5Fcvnqd9WNSSU%5F%5FKR%5F%5F
+.rediff.com	TRUE	/	FALSE	1230767999	RuW	1228765056500337
+.rediff.com	TRUE	/	FALSE	1609519870	RMFD	011L9W8fO106Q1
+.rediff.com	TRUE	/	FALSE	1609519870	RMID	cbfcb4d3493c8a80
