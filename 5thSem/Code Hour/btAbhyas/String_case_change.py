@@ -1,8 +1,9 @@
 test_cases = int(input())
-print
+print("sena".upper)
 for i in range(test_cases):
     T = input()    
-    if T == T[0].upper:
-        print(T[0])
-    else:
-        print(T.lower)
+    if T[0].isupper():
+        print(T.upper())
+        # print(T.u)
+    elif T[0].islower():
+        print(T.lower())
