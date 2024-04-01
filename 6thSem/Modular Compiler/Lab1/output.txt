@@ -1,0 +1,1 @@
+<IF,if><LPAREN,(><ID,i><LEQ,<=><NUM,20><RPAREN,)><ID,i><MUL,*><NUM,20><SEMICOLON,;><ELSE,else><ID,i><ASSIGN,=><ID,i><ADD,+><NUM,10><SEMICOLON,;>
